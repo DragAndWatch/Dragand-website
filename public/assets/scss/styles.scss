@@ -76,7 +76,7 @@ header {
     .container {
         position: relative;
         height: 100%;
-        width: 100%;
+        width: 90%;
         max-width: 980px;
         margin: auto;
         .social {
@@ -91,7 +91,6 @@ header {
         }
         .description {
             position: relative;
-            // left: 5%;
             top: 33%;
             max-width: 465px;
             h1 {
@@ -147,6 +146,7 @@ header {
             position : absolute;
             bottom: -40px;
             right: 0;
+            z-index : 1;
         }
     }
 }

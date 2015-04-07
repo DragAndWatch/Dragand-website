@@ -1,0 +1,67 @@
+@media screen and (max-width: 940px) {
+    header {
+        &::before, &::after {
+            width: 3%;
+        }
+        .container {
+            .description {
+                top: 25%;
+                width: 50%;
+                strong {
+                    width: 55px;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .download-btn {
+                display: block;
+                width: 200px;
+                margin: 0 auto 30px auto;
+            }
+            #getMacApp {
+                margin-right: auto;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height : 100vh;
+
+        .container {
+            .description {
+                top: 25%;
+                width: 55%;
+            }
+            #homeScreen {
+                position: absolute;
+                width : 45%;
+                bottom: 20%;
+                right: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 630px) {
+    header {
+
+        .container {
+            .social {
+                margin-top : 50px;
+            }
+            .description {
+                top: 100px;
+                width: 100%;
+                p {
+                    margin : 40px auto;
+                }
+            }
+            #homeScreen {
+                display : none;
+            }
+        }
+    }
+}
+
