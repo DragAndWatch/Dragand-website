@@ -4,5 +4,8 @@ idea
 #Node Modules 
 node_modules
 
+#Node Erroes 
+npm-debug.log
+
 #Better if user compile css by himself
 public/assets/css
