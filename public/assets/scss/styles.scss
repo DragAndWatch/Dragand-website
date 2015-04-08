@@ -75,7 +75,6 @@ html {
         padding: 10px 0;
     }
     &:hover {
-        transform: scale(1.05);
     }
 }
 
@@ -192,7 +191,34 @@ header {
         color: white;
     }
 }
-
+#features {
+    padding : 90px 0;
+    .feature {
+        width : 33.3333333%;
+        float : left;
+        box-sizing : border-box;
+        padding : 0 3%;
+        text-align : center;
+        color : #555;
+        .circle {
+            height: 100px;
+            width: 100px;
+            background : $orange;
+            border-radius : 100%;
+            margin : auto;
+        }
+        h2 {
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size : 1.1rem;
+            margin  : 15px 0;
+        }
+        p {
+            font-size : 0.9rem;
+            font-weight : light;
+        }
+    }
+}
 footer {
     padding : 23px 0;
     &::after {
