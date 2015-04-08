@@ -74,8 +74,7 @@ html {
         vertical-align: top;
         padding: 10px 0;
     }
-    &:hover {
-    }
+    &:hover {}
 }
 
 .getMacApp {
@@ -191,29 +190,35 @@ header {
         color: white;
     }
 }
+
 #features {
-    padding : 90px 0;
+    padding: 90px 0;
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
     .feature {
-        width : 33.3333333%;
-        float : left;
-        box-sizing : border-box;
-        padding : 0 3%;
-        text-align : center;
-        color : #555;
+        width: 33.3333333%;
+        float: left;
+        box-sizing: border-box;
+        padding: 0 3%;
+        text-align: center;
+        color: #555;
         .circle {
             height: 100px;
             width: 100px;
-            background : $orange;
-            border-radius : 100%;
-            margin : auto;
+            background: $orange;
+            border-radius: 100%;
+            margin: auto;
             overflow: hidden;
             img {
-                margin : auto;
-                width: 50%;   
-                display : block;
-                position : relative;
+                margin: auto;
+                width: 50%;
+                display: block;
+                position: relative;
             }
-            #hand-icon {    
+            #hand-icon {
                 top: 22px;
             }
             #earth-icon {
@@ -226,26 +231,32 @@ header {
         h2 {
             text-transform: uppercase;
             font-weight: normal;
-            font-size : 1.1rem;
-            margin  : 15px 0;
+            font-size: 1.1rem;
+            margin: 15px 0;
         }
         p {
-            font-size : 0.9rem;
-            font-weight : light;
-            margin : 0;
+            font-size: 0.9rem;
+            font-weight: light;
+            margin: 0;
         }
     }
 }
+
+#apiStats {
+    background: #f8f8f8;
+    padding: 60px 0px;
+}
+
 footer {
-    padding : 23px 0;
+    padding: 23px 0;
     &::after {
-        content : '';
-        clear : both;
-        display : table;
+        content: '';
+        clear: both;
+        display: table;
     }
     #logoLight {
         position: relative;
-        float : left;
+        float: left;
         text-decoration: none;
         cursor: pointer;
         transition: all 0.4s ease;
@@ -276,22 +287,22 @@ footer {
         }
     }
     .credits {
-        float : left;
-        color : $lightGrey;
-        font-size : 0.6rem;
-        margin-top : 15px;
-        margin-left : 35px; 
+        float: left;
+        color: $lightGrey;
+        font-size: 0.6rem;
+        margin-top: 15px;
+        margin-left: 35px;
         a {
             text-decoration: none;
-            color : $lightGrey;
-            border-bottom : 1px solid $lightGrey;
+            color: $lightGrey;
+            border-bottom: 1px solid $lightGrey;
             transition: all 0.3s ease;
             &:hover {
-                color : #1E2123;
+                color: #1E2123;
             }
         }
     }
     .social {
-        margin-top : 12px;
+        margin-top: 12px;
     }
 }
