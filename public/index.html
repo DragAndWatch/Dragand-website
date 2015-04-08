@@ -57,8 +57,8 @@
             <div class="description">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                <a href="" id="getMacApp" class="download-btn"><i class="icon-apple"></i><span>Get the Mac app</span></a>
-                <a href="" id="getWinApp" class="download-btn"><i class="icon-windows8"></i><span>Get the Windows app</span></a> 
+                <a href="" class="download-btn getMacApp"><i class="icon-apple"></i><span>Get the Mac app</span></a>
+                <a href="" class="download-btn getWinApp"><i class="icon-windows8"></i><span>Get the Windows app</span></a> 
                 <strong>It's free !</strong>
             </div>
             <img id="homeScreen" src="assets/images/dragandHome.png"  alt="DragAnd App home page">
@@ -67,15 +67,35 @@
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <section id="getTheApp">
+        <a href="" class="download-btn getMacApp"><i class="icon-apple"></i><span>Get the Mac app</span></a>
+        <a href="" class="download-btn getWinApp"><i class="icon-windows8"></i><span>Get the Windows app</span></a> 
+    </section>
 	
+    <footer>
+        <div class="container">
+            <a id="logoLight" href="#"><i></i><span>DRAGAND</span></a>
+            <div class="credits">
+                By <a href="http://mathieuletyrant.com/" target="_blank">Mathieu Le Tyrant</a>, <a href="http://hengpatrick.fr/" target="_blank">Patrick Heng</a>, <a href="http://robinmastromarino.com/" target="_blank">Robin Mastromarino</a>
+            </div>
+            <div class="social">
+                <a class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count"></a>
+                <a class="twitterBtn twitter-share-button"
+                  href="https://twitter.com/share"
+                  data-via="dragandwatch">
+                    Tweet
+                </a>
+            </div>
+        </div>
+    </footer>
 
  
 
     <!-- JAVASCRIPTS -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
 
     <!-- build:js public/js/script.js -->
 	<script type="text/javascript" src="assets/js/views/UI.js"></script>

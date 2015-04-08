@@ -2,3 +2,8 @@
     0%   { background-position: 0 0 }
     100% { background-position: 0 -479px }
 }
+
+@keyframes bgSectionMove {
+    0%   { background-position: 0 0 }
+    100% { background-position: -200px -162px }
+}
