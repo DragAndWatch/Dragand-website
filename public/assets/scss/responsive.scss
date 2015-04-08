@@ -47,6 +47,20 @@
 }
 
 @media screen and (max-width: 705px) {
+    #features {
+        .feature {
+            width : 80%;
+            margin : auto;
+            float : none;
+            margin-bottom : 60px;
+        }
+        h2, p {
+            display : inline-block;
+            width : 80%;
+            max-width : 400px;
+        }
+    }
+
     footer {
         .social {
             margin-top: 20px;

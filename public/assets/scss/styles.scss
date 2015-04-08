@@ -206,6 +206,22 @@ header {
             background : $orange;
             border-radius : 100%;
             margin : auto;
+            overflow: hidden;
+            img {
+                margin : auto;
+                width: 50%;   
+                display : block;
+                position : relative;
+            }
+            #hand-icon {    
+                top: 22px;
+            }
+            #earth-icon {
+                top: 25px;
+            }
+            #rocket-icon {
+                top: 12px;
+            }
         }
         h2 {
             text-transform: uppercase;
@@ -216,6 +232,7 @@ header {
         p {
             font-size : 0.9rem;
             font-weight : light;
+            margin : 0;
         }
     }
 }
