@@ -13,23 +13,24 @@
                     margin: auto;
                 }
             }
-            .download-btn {
-                display: block;
-                width: 200px;
-                margin: 0 auto 30px auto;
-            }
-            #getMacApp {
+            .getMacApp {
                 margin-right: auto;
             }
-
         }
+    }
+    .download-btn {
+        display: block;
+        width: 200px;
+        margin: 0 auto 30px auto;
+    }
+    .getMacApp {
+        margin-right: auto;
     }
 }
 
 @media screen and (max-width: 800px) {
     header {
-        height : 100vh;
-
+        height: 100vh;
         .container {
             .description {
                 top: 25%;
@@ -37,31 +38,38 @@
             }
             #homeScreen {
                 position: absolute;
-                width : 45%;
+                width: 45%;
                 bottom: 20%;
                 right: 0;
             }
         }
     }
 }
+
+@media screen and (max-width: 705px) {
+    footer {
+        .social {
+            margin-top: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 630px) {
     header {
-
         .container {
             .social {
-                margin-top : 50px;
+                margin-top: 50px;
             }
             .description {
                 top: 100px;
                 width: 100%;
                 p {
-                    margin : 40px auto;
+                    margin: 40px auto;
                 }
             }
             #homeScreen {
-                display : none;
+                display: none;
             }
         }
     }
 }
-
