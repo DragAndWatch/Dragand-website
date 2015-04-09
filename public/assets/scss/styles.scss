@@ -311,6 +311,7 @@ header {
                 display : inline-block;
                 position: relative;
                 padding : 0 20px;
+                box-sizing : border-box;
                 font-size : 0.9rem;
                 color : $orange;
                 &::after {
