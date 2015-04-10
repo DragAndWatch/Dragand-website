@@ -6,21 +6,32 @@ html {
     font-family: $font;
     font-weight: 200;
     color: #333333;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 * {
     outline: none;
 }
 
+h2 {
+    color: #333;
+}
+
+p {
+    font-weight: 200;
+}
+
 a.link {
-    color : $orange;
+    color: $orange;
     text-decoration: none;
-    border-bottom : 1px solid $orange;
+    border-bottom: 1px solid $orange;
     transition: all 0.2s ease;
     &:hover {
-        color : #b84742;
+        color: #b84742;
     }
 }
+
 #logo {
     position: relative;
     text-decoration: none;
@@ -59,17 +70,16 @@ a.link {
 }
 
 p {
-    font-size: 0.9rem;
-    font-weight: light;
-    line-height: 1.3rem;
-    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.5rem;
 }
 
 .container {
     position: relative;
     height: 100%;
     width: 90%;
-    max-width: 980px;
+    max-width: 960px;
     margin: auto;
 }
 
@@ -152,6 +162,7 @@ header {
             max-width: 465px;
             h1 {
                 margin: 0;
+                font-weight: 400;
             }
             p {
                 margin: 30px 0;
@@ -248,7 +259,8 @@ header {
                 transition: all 1s ease, opacity 0.5s ease 0.5s;
             }
             #earth-icon {
-                top: 25px;
+                top: 20px;
+                width: 60%;
                 transition: all 1s ease 0.3s, opacity 0.5s ease 0.8s;
             }
             #rocket-icon {
@@ -260,7 +272,11 @@ header {
             text-transform: uppercase;
             font-weight: normal;
             font-size: 1.1rem;
-            margin: 15px 0;
+            margin: 20px 0 10px 0;
+            letter-spacing: 0.05rem;
+        }
+        p {
+            margin: 0 auto;
         }
     }
 }
@@ -275,8 +291,7 @@ header {
     }
     .left {
         float: left;
-        width: 35%;
-        max-width: 370px;
+        width: 40%;
         img {
             width: 100%;
             display: block;
@@ -284,10 +299,9 @@ header {
         }
     }
     .right {
-        float: left;
-        width: 65%;
-        padding-left: 5%;
-        box-sizing: border-box;
+        float: right;
+        width: 50%;
+        margin-left: 5%;
         h2 {
             color: #333;
             text-transform: uppercase;
@@ -297,37 +311,36 @@ header {
         #stats {
             padding: 0;
             list-style: none;
-            text-align : center;
-            margin-top : 40px;
+            text-align: center;
+            margin-top: 40px;
             li {
                 span {
-                    display : block;
-                    color : #333;
-                    font-weight : normal;
-                    font-size : 2.3rem;
-                    margin-bottom : 5px;
+                    display: block;
+                    color: #333;
+                    font-weight: normal;
+                    font-size: 2.3rem;
+                    margin-bottom: 5px;
                 }
                 text-transform: uppercase;
-                display : inline-block;
+                display: inline-block;
                 position: relative;
-                padding : 0 20px;
-                box-sizing : border-box;
-                font-size : 0.9rem;
-                color : $orange;
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 0.9rem;
+                color: $orange;
                 &::after {
-                    content:'';
-                    position : absolute;
-                    right : 0;
-                    top : 20px;
-                    height : 30px;
-                    width : 1px;
-                    background-color : #d7d7d7;
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 20px;
+                    height: 30px;
+                    width: 1px;
+                    background-color: #d7d7d7;
                 }
                 &:last-child::after {
-                    display : none;
+                    display: none;
                 }
             }
-
         }
     }
 }
