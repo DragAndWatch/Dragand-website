@@ -7,3 +7,48 @@
     0%   { background-position: 0 0 }
     100% { background-position: -200px -162px }
 }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.fadeInLeft {
+	animation-name : fadeInUp;
+	animation-duration: 1s;
+  	animation-fill-mode: both;
+}
+
+.fadeInUp {
+	animation : fadeInUp 1s ease;
+  	animation-fill-mode: both;
+}

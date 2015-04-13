@@ -1,3 +1,15 @@
+@media screen and (max-width: 1080px) {
+    #apiStats {
+        .right {
+            #stats {
+                li {
+                    padding: 0 18px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 940px) {
     header {
         &::before, &::after {
@@ -15,6 +27,8 @@
             }
             .getMacApp {
                 margin-right: auto;
+                margin-bottom: 30px;
+                width : 192px;
             }
         }
     }
@@ -28,7 +42,10 @@
     }
     #apiStats {
         .left {
-            display: none;
+            float : none;
+            display: block;
+            width: 40%;
+            margin: 0 auto 20px auto;
         }
         .right {
             width: 100%;
@@ -81,6 +98,11 @@
 }
 
 @media screen and (max-width: 630px) {
+    #apiStats {
+        .left {
+            width: 80%;
+        }
+    }
     header {
         .container {
             .social {
@@ -89,8 +111,11 @@
             .description {
                 top: 75px;
                 width: 100%;
+                h1 {
+                    font-size : 1.9rem;
+                }
                 p {
-                    margin: 40px auto;
+                    margin: 30px auto;
                 }
             }
             #homeScreen {
@@ -98,23 +123,42 @@
             }
         }
     }
+    .downloadBtn {
+        width : 200px;
+        margin : 0 auto 15px auto;
+        display : block;
+    }
     #apiStats {
         .right {
             #stats {
                 li {
-                    display : block;
-                    width : 100%;
+                    display: block;
+                    width: 100%;
                     text-align: center;
-                    margin-bottom : 35px;
+                    margin-bottom: 35px;
+                    padding: 0;
                     &:last-child {
-                        margin-bottom : 0;
-                        
+                        margin-bottom: 0;
                     }
                     &::after {
-                        content:'';
-                        display : none;
+                        content: '';
+                        display: none;
                     }
                 }
+            }
+        }
+    }
+    #joinTheLeague {
+        .left {
+            width: 100%;
+        }
+        .right {
+            width: 100%;
+            margin-top: 40px;
+            svg {
+                width : 80%;
+                margin:auto;
+                display : block;
             }
         }
     }
