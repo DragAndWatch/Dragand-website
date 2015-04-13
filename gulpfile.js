@@ -22,7 +22,7 @@ var gulp 		 = require('gulp'),
 		path 	: 'public/assets',
 		scss 	: 'public/assets/scss',
 		fonts 	: 'public/assets/fonts',
-		images	: 'public/assets/img',
+		images	: 'public/assets/images',
 		css		: 'public/assets/css',
 		vendor	: 'public/assets/vendor'
 	},
@@ -80,7 +80,7 @@ gulp.task('images' , function () {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))
-		.pipe(gulp.dest(dist.images));
+		.pipe(gulp.dest('dist/public/images'));
 });
 
 /*
@@ -113,17 +113,15 @@ gulp.task('dist', ['clean', 'style', 'images', 'fonts'], function() {
 
 	var assets = useref.assets();
 
-	var dist = gulp.src(src.path+'/index.html').pipe(assets);
+	var dist = gulp.src('public/index.html').pipe(assets);
 
 		if(angularProject) {
 			dist.pipe(gulpif('*.js', ngAnnotate()));
 		}
 
-		dist.pipe(uglify())
-			.pipe(assets.restore())
+		dist.pipe(assets.restore())
 			.pipe(useref())
-			.pipe(gulp.dest(dist.path))
-			.pipe(notify("Your project is now build in dist folder."));
+			.pipe(gulp.dest('dist/'));
 });
 
 /*
