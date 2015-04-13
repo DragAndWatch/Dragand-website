@@ -1,5 +1,3 @@
-'use strict';
-
 // Click on bottom logo 
 $('#logoLight').on('click', function() {
     UI.scrollToTop(1000);

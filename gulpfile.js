@@ -14,7 +14,8 @@ var gulp 		 = require('gulp'),
 	open 		 = require('gulp-open'),
 	plumber		 = require('gulp-plumber'),
 	notify 		 = require('gulp-notify'),
-
+	minifyCSS 	 = require('gulp-minify-css'),
+	rename		 = require('gulp-rename'),
 	/*
 	 * Config Path
 	 */
@@ -28,8 +29,8 @@ var gulp 		 = require('gulp'),
 	},
 	dist		 = {
 		path	: 'dist',
-		fonts	: 'dist/public/fonts',
-		images	: 'dist/public/images'
+		fonts	: 'dist/assets/fonts',
+		images	: 'dist/assets/images'
 	},
 	
 	/*
@@ -74,7 +75,7 @@ gulp.task('clean', function() {
  * Move images to 'dist' folder and optimise all images
  */
 gulp.task('images' , function () {
-	gulp.src(src.images+'/**/*').pipe(gulp.dest('dist/public/images'));
+	gulp.src(src.images+'/**/*').pipe(gulp.dest('dist/assets/images'));
 });
 
 /*
@@ -97,13 +98,16 @@ gulp.task('style', function () {
 		.pipe(sass())
 		.pipe(autoprefixer(autoPrefixerBrowers))
 		.pipe(gulp.dest(src.css))
+		.pipe(minifyCSS())
+		.pipe(rename({ extname: '.min.css' }))
+		.pipe(gulp.dest(src.css))
 		.pipe(livereload());
 });
 
 /*
  * Create folder dist
  */
-gulp.task('dist', ['clean', 'style', 'images', 'fonts'], function() {
+gulp.task('dist', ['clean', 'images', 'fonts'], function() {
 
 	var assets = useref.assets();
 
