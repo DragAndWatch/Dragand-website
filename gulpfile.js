@@ -74,13 +74,7 @@ gulp.task('clean', function() {
  * Move images to 'dist' folder and optimise all images
  */
 gulp.task('images' , function () {
-	gulp.src(src.images+'/**/*')
-		.pipe(imagemin({
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-		}))
-		.pipe(gulp.dest('dist/public/images'));
+	gulp.src(src.images+'/**/*').pipe(gulp.dest('dist/public/images'));
 });
 
 /*
