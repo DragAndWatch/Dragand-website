@@ -1,12 +1,6 @@
 $(document).ready(function() {
     var numbersAnim = false;
 
-    // ---- Click on bottom logo 
-    $('#logoLight').on('click', function() {
-        UI.scrollToTop(1000);
-    });
-
-
     // ---- OnScroll Animations
     $(window).scroll(function() {
         checkCircleAnimation();
@@ -18,12 +12,16 @@ $(document).ready(function() {
         apiSectionAnimation();
     });
 
-    // ---- Animate number for API section
-
-
-
-
-
+    // ---- Scroll icon 
+    $('#scrollIcon').on('click', function (ev){
+        ev.preventDefault();
+        $('html, body').animate( { scrollTop: $('#features').offset().top }, 700 );
+    });
+    // ---- Click on bottom logo 
+    $('#logoLight').on('click', function(ev) {
+        ev.preventDefault();
+        $('html, body').animate( { scrollTop: 0 }, 1000 );
+    });
 
     // ---- Trigger circle animation on scroll
     function checkCircleAnimation() {

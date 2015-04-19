@@ -42,6 +42,15 @@
   }
 }
 
+@keyframes arrow {
+  0%,100% {
+    transform : translateY(0);
+  }
+  50% {
+    transform : translateY(-5px);
+  } 
+}
+
 .fadeInLeft {
 	animation-name : fadeInUp;
 	animation-duration: 1s;

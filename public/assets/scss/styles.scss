@@ -97,19 +97,19 @@ p {
         vertical-align: top;
     }
     .downloadBtnContent {
-        display : inline-block;
+        display: inline-block;
         line-height: 0.94rem;
         span {
             display: block;
             vertical-align: top;
             &.version {
-                font-size : 0.7rem;
+                font-size: 0.7rem;
             }
         }
         &::after {
-            content : '';
-            clear : both;
-            display : table;
+            content: '';
+            clear: both;
+            display: table;
         }
     }
 }
@@ -118,7 +118,7 @@ p {
     background: white;
     padding-left: 17px;
     margin-right: 30px;
-    color : #2e2e2e;
+    color: #2e2e2e;
     &:hover {
         background: #d1d3d4;
     }
@@ -126,7 +126,7 @@ p {
 
 .getWinApp {
     background: $winBlue;
-    cursor : default;
+    cursor: default;
     &:hover {
         background: $winBlueHover;
     }
@@ -192,10 +192,24 @@ header {
         }
         #homeScreen {
             position: absolute;
-            bottom: 14%;
+            top: 50%;
+            transform: translateY(-50%);
             right: 0;
             z-index: 1;
         }
+    }
+    #scrollIcon {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        text-align: center;
+        color: #EEE;
+        font-size: 2rem;
+        margin-left: -10px;
+        z-index: 99;
+        cursor: pointer;
+        width: 20px;
+        animation : arrow 2s ease infinite;
     }
 }
 
@@ -222,7 +236,7 @@ header {
     .downloadBtn {
         position: relative;
         z-index: 1000;
-        text-align : left;
+        text-align: left;
     }
     p {
         font-size: 0.85rem;
@@ -304,7 +318,7 @@ header {
     .left {
         float: left;
         width: 40%;
-        opacity : 0;
+        opacity: 0;
         img {
             width: 100%;
             display: block;
@@ -322,8 +336,8 @@ header {
             text-align: center;
             margin-top: 40px;
             &::after {
-                content : '';
-                clear : both;
+                content: '';
+                clear: both;
             }
             li {
                 span {
@@ -335,14 +349,13 @@ header {
                 }
                 text-transform: uppercase;
                 display: block;
-                float : left;
+                float: left;
                 position: relative;
                 padding: 0 29px;
                 box-sizing: border-box;
                 font-size: 0.9rem;
                 color: $orange;
-                font-weight : 400;
-
+                font-weight: 400;
                 &::after {
                     content: '';
                     position: absolute;
@@ -352,8 +365,8 @@ header {
                     width: 1px;
                     background-color: #d7d7d7;
                 }
-                &:first-child{
-                    padding-left : 0;
+                &:first-child {
+                    padding-left: 0;
                 }
                 &:last-child::after {
                     display: none;
@@ -362,6 +375,7 @@ header {
         }
     }
 }
+
 #joinTheLeague {
     padding: 80px 0px;
     &:after {
@@ -375,12 +389,12 @@ header {
         margin-left: 5%;
         padding-top: 4%;
         a {
-            color : $orange;
+            color: $orange;
             text-decoration: none;
-            padding-bottom : 2px;
+            padding-bottom: 2px;
             transition: all 0.2s ease;
             &:hover {
-               opacity :0.7;
+                opacity: 0.7;
             }
         }
     }
@@ -388,15 +402,16 @@ header {
         float: left;
         width: 45%;
         svg {
-              margin: auto;
-              display: block;
-              width: 100%;
-              #gitHubSVGGroup {
-                animation : none!important;
-              }
+            margin: auto;
+            display: block;
+            width: 100%;
+            #gitHubSVGGroup {
+                animation: none!important;
+            }
         }
     }
 }
+
 footer {
     padding: 23px 0;
     &::after {
