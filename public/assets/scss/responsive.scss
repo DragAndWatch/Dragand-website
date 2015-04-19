@@ -103,16 +103,19 @@
             width: 80%;
         }
     }
+    #logo {
+        top : 15px;
+    }
     header {
         .container {
             .social {
-                margin-top: 50px;
+                margin-top: 20px;
             }
             .description {
-                top: 75px;
+                top: 55px;
                 width: 100%;
                 h1 {
-                    font-size : 1.9rem;
+                      font-size: 1.7rem;
                 }
                 p {
                     margin: 30px auto;
@@ -120,6 +123,9 @@
             }
             #homeScreen {
                 display: none;
+            }
+            #scrollIcon {
+                bottom : 3%;
             }
         }
     }
