@@ -143,12 +143,19 @@ p {
     .twitter-share-button {
         width: 80px !important;
     }
+    iframe:first-child {
+        margin-right: 7px;
+    }
 }
 .bgMove {
     position : absolute;
     height : 300%;
     z-index: -1;
     width: 100%;
+}
+
+#twitter-widget-2 {
+    margin-right : 7px;
 }
 
 header {
