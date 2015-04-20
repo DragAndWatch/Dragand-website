@@ -146,10 +146,8 @@ p {
 }
 .bgMove {
     position : absolute;
-    height : 200%;
+    height : 250%;
     z-index: -1;
-    background: url('../images/bg.jpg') top center repeat black;
-    animation: bgMove 5s linear infinite;
     width: 100%;
 }
 
@@ -164,7 +162,7 @@ header {
     overflow : hidden;
     .bgMove {
         background: url('../images/bg.jpg') top center repeat black;
-        animation: bgMove 25s linear infinite;
+        animation: bgMove 40s linear infinite;
     }
     &::before, &::after {
         content: '';
