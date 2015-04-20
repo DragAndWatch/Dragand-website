@@ -202,9 +202,10 @@ header {
             padding-left: 17px;
             margin-right: 30px;
         }
-        #homeScreen {
+        #appScreen {
             position: absolute;
             top: 50%;
+            max-width : 365px;
             transform: translateY(-50%);
             right: 0;
             z-index: 1;
