@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 940px) {
+    h1 {
+        font-size : 2em;
+    }
     header {
         &::before, &::after {
             width: 3%;

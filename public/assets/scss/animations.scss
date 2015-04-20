@@ -1,11 +1,12 @@
 @keyframes bgMove {
-    0%   { background-position: 0 0 }
-    100% { background-position: 0 -479px }
+    0%   {transform : translateY(0);}
+    100% {transform : translateY(-479px);}
+
 }
 
 @keyframes bgSectionMove {
-    0%   { background-position: 0 0 }
-    100% { background-position: -200px -162px }
+    0%   { transform : none;}
+    100% { transform : transform : translate3D(-200px,-162px,0)}
 }
 
 @keyframes fadeInLeft {

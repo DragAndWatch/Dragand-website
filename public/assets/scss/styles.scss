@@ -13,7 +13,9 @@ html {
 * {
     outline: none;
 }
-
+h1 {
+    font-size : 2.4em;
+}
 h2 {
     color: #333;
     text-transform: uppercase;
@@ -142,6 +144,14 @@ p {
         width: 80px !important;
     }
 }
+.bgMove {
+    position : absolute;
+    height : 200%;
+    z-index: -1;
+    background: url('../images/bg.jpg') top center repeat black;
+    animation: bgMove 5s linear infinite;
+    width: 100%;
+}
 
 header {
     display: block;
@@ -150,8 +160,12 @@ header {
     height: 100vh;
     background: lightgrey;
     color: white;
-    background: url('../images/bg.jpg') top center repeat black;
-    animation: bgMove 40s linear infinite;
+    background : transparent;
+    overflow : hidden;
+    .bgMove {
+        background: url('../images/bg.jpg') top center repeat black;
+        animation: bgMove 25s linear infinite;
+    }
     &::before, &::after {
         content: '';
         position: absolute;
@@ -210,6 +224,10 @@ header {
         cursor: pointer;
         width: 20px;
         animation : arrow 2s ease infinite;
+        transition: all 0.4s ease;
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -219,14 +237,15 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
+
     &::before {
         content: '';
         display: block;
         position: absolute;
-        top: -280px;
-        left: -20%;
-        width: 140%;
-        height: 900px;
+        top: -290px;
+        left: 0%;
+        width: 100%;
+        height: 870px;
         transform: rotate(20deg);
         z-index: 1;
         background: url('../images/patternBg.png') center repeat;
