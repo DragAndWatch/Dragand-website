@@ -12,4 +12,4 @@
 */
 
 $app->get('/', 'App\Http\Controllers\HomeController@index');
-$app->post('/newsletter', 'App\Http\Controllers\NewsLetterController@add')
+$app->post('/newsletter', 'App\Http\Controllers\NewsLetterController@index');
