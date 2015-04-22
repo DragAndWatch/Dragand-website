@@ -1,6 +1,4 @@
-@extends('layout.master')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 	<header>
         <div class="bgMove"></div>
@@ -43,9 +41,10 @@
         </div>
     </header>
     
-	@include('modules.features')
-	@include('modules.api')
-	@include('modules.joinTheLeague')
-	@include('modules.getTheApp')
+	<?php echo $__env->make('modules.features', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo $__env->make('modules.api', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo $__env->make('modules.joinTheLeague', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+	<?php echo $__env->make('modules.getTheApp', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
  
-@stop
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layout.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

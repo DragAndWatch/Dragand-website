@@ -39,7 +39,7 @@
     <body>
         <div id="fb-root"></div>
 
-        @yield('content')
+        <?php echo $__env->yieldContent('content'); ?>
 
         <footer>
             <div class="container">
