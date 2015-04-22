@@ -1,11 +1,16 @@
-#PHP STORM
-idea
+# LUMEN
+/lumen.log
+/vendor
+.env
 
-#Node Modules 
+# PHP STORM
+.idea
+
+# Node Modules 
 node_modules
 
-#Node Erroes 
+# Node Erroes 
 npm-debug.log
 
-#Better if user compile css by himself
+# Better if user compile css by himself
 public/assets/css
