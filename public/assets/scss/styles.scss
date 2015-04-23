@@ -548,9 +548,10 @@ footer {
             box-sizing: border-box;
             border: 0;
             overflow: hidden;
+            font-size : 0.9em;
         }
         input[type="email"] {
-            width: 78%;
+            width: 76%;
             background: #262a2c;
             padding: 0 20px;
             border-top-left-radius: 2px;
@@ -559,12 +560,14 @@ footer {
             transition: all 0.5s ease;
         }
         input[type="submit"] {
-            width: 22%;
+            width: 24%;
+            text-align : center;
             background: #1e2123;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
             transform: translateX(100%);
             transition: all 0.5s ease;
+            text-transform: uppercase;
             &:hover {
                 background: #2e3235;
             }
