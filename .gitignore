@@ -1,5 +1,5 @@
 #PHP STORM
-idea
+.idea
 
 #Node Modules 
 node_modules
@@ -9,3 +9,4 @@ npm-debug.log
 
 #Better if user compile css by himself
 public/assets/css
+

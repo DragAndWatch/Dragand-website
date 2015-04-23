@@ -5,11 +5,13 @@ $(document).ready(function() {
     $(window).scroll(function() {
         checkCircleAnimation();
         apiSectionAnimation();
+        newsletterSectionAnimation();
     });
     // ---- OnResize
     $(window).on('resize', function() {
         checkCircleAnimation();
         apiSectionAnimation();
+		newsletterSectionAnimation();
     });
 
     // ---- Scroll icon 
@@ -86,6 +88,20 @@ $(document).ready(function() {
             'animation-delay': delayInterval + 's'
         })
     });
+
+	// ---- Newsletter animation
+	function newsletterSectionAnimation() {
+		var bottom_of_object = $('#newsletter').offset().top;
+		var bottom_of_window = $(window).scrollTop() + $(window).height();
+		var lightCall = $('#dragandLightCall');
+
+		if (bottom_of_window > bottom_of_object + 30) {
+			lightCall.addClass('scaleUp');
+			setTimeout(function(){
+				lightCall.addClass('animated');
+			},1000);
+		}
+	};
 
 
     // ---- Add Twitter share script
