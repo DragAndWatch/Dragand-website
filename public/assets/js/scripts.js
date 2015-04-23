@@ -91,12 +91,13 @@ $(document).ready(function() {
 
 	// ---- Newsletter animation
 	function newsletterSectionAnimation() {
-		var bottom_of_object = $('#newsletter').offset().top;
+		var nlSection = $('#newsletter')
+		var bottom_of_object = nlSection.offset().top;
 		var bottom_of_window = $(window).scrollTop() + $(window).height();
 		var lightCall = $('#dragandLightCall');
 
 		if (bottom_of_window > bottom_of_object + 30) {
-			lightCall.addClass('scaleUp');
+			nlSection.addClass('scrolled');
 			setTimeout(function(){
 				lightCall.addClass('animated');
 			},1000);

@@ -504,8 +504,6 @@ footer {
     text-align : center;
     color : white;
     width: 100%;
-    background : #d2514b;
-
     background : url('../images/city-center-bg.jpg') center  bottom  no-repeat, url('../images/city-repeat-bg.jpg') bottom left repeat-x , #d2514b;
     h2 {
         margin-top: 0;
@@ -519,13 +517,22 @@ footer {
         margin : auto;
         width: 80%;
         max-width : 450px;
-
+        border-radius: 2px;
+        background : #262a2c;
+        position : relative;
+        overflow : hidden;
+        &::after {
+            content : '';
+            clear : both;
+            display : table;
+        }
         input {
             display : block;
             float : left;
             height : 50px;
             box-sizing: border-box;
             border : 0;
+            overflow : hidden;
         }
         input[type="email"] {
             width : 78%;
@@ -533,12 +540,15 @@ footer {
             padding : 0 20px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px;
+            transform: translateY(100%);
+            transition: all 0.5s ease;
         }
         input[type="submit"] {
             width : 22%;
             background : #1e2123;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
+            transform: translateX(100%);
             transition: all 0.5s ease;
             &:hover {
                 background : #2e3235;
@@ -572,21 +582,14 @@ footer {
             top : 9px;
         }
     }
-}
-
-@keyframes lightCall {
-    0%, 100% {
-        transform : rotate(-5deg);
-        opacity : 1;
-    }
-    25%,70% {
-        opacity : 0.8;
-    }
-    40% {
-        opacity : 0.4;
-    }
-    50% {
-        transform : rotate(5deg);
-        opacity : 0.9;
+    &.scrolled {
+        .NlSubmit {
+            input {
+                transform : none;
+            }
+        }
+        #dragandLightCall {
+            transform: rotate(-5deg) scale(1);
+        }
     }
 }

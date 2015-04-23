@@ -61,6 +61,12 @@
             }
         }
     }
+    #newsletter {
+        background : url('../images/city-center-bg.jpg') right  bottom  no-repeat #d2514b;
+        #dragandLightCall {
+            display : none;
+        }
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -184,6 +190,23 @@
                 width : 80%;
                 margin:auto;
                 display : block;
+            }
+        }
+    }
+    #newsletter {
+        p {
+            width : 80%;
+            margin : 30px auto;
+        }
+        .NlSubmit {
+            input {
+                font-size : 0.7rem;
+            }
+            input[type="email"] {
+                width: 68%;
+            }
+            input[type="submit"] {
+                width: 32%;
             }
         }
     }

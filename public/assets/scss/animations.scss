@@ -9,6 +9,24 @@
     100% { transform : translate3D(-200px,-162px,0);}
 }
 
+@keyframes lightCall {
+    0%, 100% {
+        transform : rotate(-5deg);
+        opacity : 1;
+    }
+    25%,70% {
+        opacity : 0.8;
+    }
+    40% {
+        opacity : 0.4;
+    }
+    50% {
+        transform : rotate(5deg);
+        opacity : 0.9;
+    }
+}
+
+
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -20,6 +38,18 @@
     transform: none;
   }
 }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 
 @keyframes fadeInUp {
   0% {
