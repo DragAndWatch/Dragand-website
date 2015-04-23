@@ -13,9 +13,11 @@ html {
 * {
     outline: none;
 }
+
 h1 {
-    font-size : 2.4em;
+    font-size: 2.4em;
 }
+
 h2 {
     color: #333;
     text-transform: uppercase;
@@ -147,15 +149,16 @@ p {
         margin-right: 7px;
     }
 }
+
 .bgMove {
-    position : absolute;
-    height : 300%;
+    position: absolute;
+    height: 300%;
     z-index: -1;
     width: 100%;
 }
 
 #twitter-widget-2 {
-    margin-right : 7px;
+    margin-right: 7px;
 }
 
 header {
@@ -165,13 +168,14 @@ header {
     height: 100vh;
     background: lightgrey;
     color: white;
-    background : transparent;
-    overflow : hidden;
+    background: transparent;
+    overflow: hidden;
     .bgMove {
         background: url('../images/bg.jpg') top center repeat black;
         animation: bgMove 40s linear infinite;
     }
-    &::before, &::after {
+    &::before,
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -213,7 +217,7 @@ header {
         #appScreen {
             position: absolute;
             top: 50%;
-            max-width : 365px;
+            max-width: 365px;
             transform: translateY(-50%);
             right: 0;
             z-index: 1;
@@ -230,7 +234,7 @@ header {
         z-index: 99;
         cursor: pointer;
         width: 20px;
-        animation : arrow 2s ease infinite;
+        animation: arrow 2s ease infinite;
         transition: all 0.4s ease;
         &:hover {
             opacity: 0.7;
@@ -244,7 +248,6 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-
     &::before {
         content: '';
         display: block;
@@ -499,93 +502,103 @@ footer {
 }
 
 #newsletter {
-    position : relative;
-    padding : 80px 0;
-    text-align : center;
-    color : white;
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    color: white;
     width: 100%;
-    background : url('../images/city-center-bg.jpg') center  bottom  no-repeat, url('../images/city-repeat-bg.jpg') bottom left repeat-x , #d2514b;
+    background: url('../images/city-center-bg.jpg') center bottom no-repeat, url('../images/city-repeat-bg.jpg') bottom left repeat-x, #d2514b;
     h2 {
         margin-top: 0;
-        color : white;
+        color: white;
     }
     p {
-        margin  : 40px auto;
+        margin: 40px auto;
+    }
+    #mce-responses {
+        display: block;
+        width: 80%;
+        margin: 15px auto 45px auto;
+        max-width: 450px;
+        a {
+            margin-top: 15px;
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid white;
+        }
     }
     .NlSubmit {
         height: 50px;
-        margin : auto;
+        margin: auto;
         width: 80%;
-        max-width : 450px;
+        max-width: 450px;
         border-radius: 2px;
-        background : #262a2c;
-        position : relative;
-        overflow : hidden;
+        background: #262a2c;
+        position: relative;
+        overflow: hidden;
         &::after {
-            content : '';
-            clear : both;
-            display : table;
+            content: '';
+            clear: both;
+            display: table;
         }
         input {
-            display : block;
-            float : left;
-            height : 50px;
+            display: block;
+            float: left;
+            height: 50px;
             box-sizing: border-box;
-            border : 0;
-            overflow : hidden;
+            border: 0;
+            overflow: hidden;
         }
         input[type="email"] {
-            width : 78%;
-            background : #262a2c;
-            padding : 0 20px;
+            width: 78%;
+            background: #262a2c;
+            padding: 0 20px;
             border-top-left-radius: 2px;
             border-bottom-left-radius: 2px;
             transform: translateY(100%);
             transition: all 0.5s ease;
         }
         input[type="submit"] {
-            width : 22%;
-            background : #1e2123;
+            width: 22%;
+            background: #1e2123;
             border-top-right-radius: 2px;
             border-bottom-right-radius: 2px;
             transform: translateX(100%);
             transition: all 0.5s ease;
             &:hover {
-                background : #2e3235;
+                background: #2e3235;
             }
         }
     }
     #dragandLightCall {
-        position : absolute;
-        top : 50px;
-        left : 50%;
-        margin-left : 210px;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        margin-left: 210px;
         width: 200px;
         height: 93px;
         background: url('../images/cone.png') left no-repeat;
-        background-size : contain;
+        background-size: contain;
         transform-origin: left bottom;
-        transform : rotate(-5deg) scale(0);
-        transition : all 1.3s ease;
-
+        transform: rotate(-5deg) scale(0);
+        transition: all 1.3s ease;
         &.scaleUp {
-            transform : rotate(-5deg) scale(1);
+            transform: rotate(-5deg) scale(1);
         }
         &.animated {
-            animation : lightCall 15s ease infinite;
-            animation-fill-mode : both;
+            animation: lightCall 15s ease infinite;
+            animation-fill-mode: both;
         }
-
         img {
-            position : absolute;
-            right : 18px;
-            top : 9px;
+            position: absolute;
+            right: 18px;
+            top: 9px;
         }
     }
     &.scrolled {
         .NlSubmit {
             input {
-                transform : none;
+                transform: none;
             }
         }
         #dragandLightCall {

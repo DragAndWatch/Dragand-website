@@ -45,10 +45,9 @@
         <div class="container">
             <a id="logo" href="#"><i></i><h1>DRAGAND</h1></a>
             <div class="social">
-                 <a class="twitter-follow-button" href="https://twitter.com/dragandwatch" data-show-count="false" data-lang="en">
+                <a class="twitter-follow-button" href="https://twitter.com/dragandwatch" data-show-count="false" data-lang="en">
                     Follow @dragandwatch
                 </a>
-                
                 <a class="twitterBtn twitter-share-button" href="https://twitter.com/share" data-via="dragandwatch">
                     Tweet
                 </a>
@@ -476,19 +475,32 @@
             </div>
         </a>
     </section>
-	<section id="newsletter">
-		<h2>Stay tuned</h2>
-		<p>Receive an email notification when an update is available.</p>
-		<div class="NlSubmit">
-			<form action="">
-				<input type="email" placeholder="Your email" />
-				<input type="submit" value="SIGN UP"/>
-			</form>
-		</div>
-		<div id="dragandLightCall">
-			<img src="assets/images/littleLogo.png" alt="Little dragand logo"/>
-		</div>
-	</section>
+    <section id="newsletter">
+        <h2>Stay tuned</h2>
+        <p>Receive an email notification when an update is available.</p>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+        <div class="NlSubmit" id="mc_embed_signup">
+            <form action="//watch.us10.list-manage.com/subscribe/post?u=21646d79526896c897eb460b4&amp;id=fb25c76d01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="text" name="b_21646d79526896c897eb460b4_e3a66846d8" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                        <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+        <div id="dragandLightCall">
+            <img src="assets/images/littleLogo.png" alt="Little dragand logo" />
+        </div>
+    </section>
     <footer>
         <div class="container">
             <a id="logoLight" href="#"><i></i><span>DRAGAND</span></a>
@@ -512,6 +524,7 @@
     <script type="text/javascript" src="assets/js/libs/countUp.jquery.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <!-- endbuild -->
+    <!-- // GOOGLE ANALITYCS  -->
     <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-61669451-2']);
@@ -525,6 +538,17 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
+    </script>
+    <!-- // MAILCHIMP -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+    (function($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
     </script>
 </body>
 
