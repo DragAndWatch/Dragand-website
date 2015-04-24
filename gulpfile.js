@@ -40,7 +40,7 @@ var gulp 		 = require('gulp'),
 	 * chrome (Windows)
 	 * google chrome (OSX)
 	 */
-	port 		 = 4000,
+	port 		 = 7000,
 	host		 = 'localhost',
 	brower		 = 'google chrome',
 	/*
