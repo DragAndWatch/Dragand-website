@@ -48,19 +48,19 @@ $(document).ready(function() {
                 to: 4.25,
                 speed: 2000,
                 decimals: 2,
-                refreshInterval: 20,
+                refreshInterval: 20
             });
             $('#languageNumber').countTo({
                 from: 0,
                 to: 41,
                 speed: 2000,
-                refreshInterval: 20,
+                refreshInterval: 20
             });
             $('#apiNumber').countTo({
                 from: 0,
                 to: 4,
                 speed: 2000,
-                refreshInterval: 20,
+                refreshInterval: 20
             });
             $('#apiStats').find('.left').addClass('fadeInUp');
             numbersAnim = true;
