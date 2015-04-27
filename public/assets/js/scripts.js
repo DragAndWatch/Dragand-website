@@ -45,7 +45,7 @@ $(document).ready(function() {
         if (bottom_of_window > bottom_of_object + 30 && !numbersAnim) {
             $('#subNumber').countTo({
                 from: 0,
-                to: 4.25,
+                to: 5.75,
                 speed: 2000,
                 decimals: 2,
                 refreshInterval: 20
@@ -58,7 +58,7 @@ $(document).ready(function() {
             });
             $('#apiNumber').countTo({
                 from: 0,
-                to: 4,
+                to: 5,
                 speed: 2000,
                 refreshInterval: 20
             });
